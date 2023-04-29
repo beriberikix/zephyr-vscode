@@ -17,3 +17,6 @@ RUN \
   file wget xz-utils \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
+
+# why aren't these in PATH?
+RUN echo "export PATH=/opt/zephyr/sysroots/x86_64-pokysdk-linux/usr/bin:$PATH" >> ~/.bashrc
