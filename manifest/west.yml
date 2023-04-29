@@ -1,0 +1,10 @@
+manifest:
+  projects:
+    - name: zephyr
+      revision: v3.3.0
+      url: https://github.com/zephyrproject-rtos/zephyr
+      clone-depth: 1
+      import:
+        name-allowlist:
+          - cmsis
+          - hal_stm32
